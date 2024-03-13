@@ -1,6 +1,7 @@
 package user.service;
 
 import lombok.Setter;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import user.bean.UserDTO;
@@ -10,12 +11,12 @@ import user.dao.UserDAOImpl;
 
 import java.util.Scanner;
 
+@Setter
 @Service
 public class UserInsertService implements UserService {
 
-    @Setter
+    @Autowired
     private UserDTO userDTO; // 정보를 받아온 것 처리
-    @Setter
 
     private UserDAO userDAO = new UserDAOImpl();
 

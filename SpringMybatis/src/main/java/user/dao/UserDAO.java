@@ -1,5 +1,6 @@
 package user.dao;
 
+import org.springframework.stereotype.Component;
 import user.bean.UserDTO;
 
 import java.util.List;

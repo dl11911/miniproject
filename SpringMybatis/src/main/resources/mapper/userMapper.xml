@@ -9,16 +9,16 @@
         insert into user values(#{userId}, #{userEmail}, #{userPassword},#{userRole},#{userPnum})
     </insert>
 
-    <select id="getUserList" resultType="user">
+    <select id="getUserList" resultType="java.util.List">
         select * from user
     </select>
     
     <update id="updateUser" parameterType="java.util.List">
-        update usertable set name=#{name}, pwd=#{pwd} where id=#{id}
+        update user set name=#{name}, pwd=#{pwd} where id=#{id}
     </update>
 
     <delete id="deleteUser" parameterType="user">
-        delete FROM usertable WHERE id=#{id}
+        delete FROM user WHERE id=#{id}
     </delete>
 
 </mapper>
