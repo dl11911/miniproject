@@ -9,15 +9,16 @@ import org.springframework.stereotype.Service;
 @Setter
 @Component
 public class UserDTO {
-    private Long user_id;
-    private String user_email;
-    private String user_password;
-    private UserRole user_role;
-    private String user_pnum;
+//    이렇게 하면 여기에 아까처럼 써도 됨  확인?이제 지울테니 혼자해봐요오 굿 >>
+    private Long userId;
+    private String userEmail;
+    private String userPassword;
+    private UserRole userRole;
+    private String userPnum;
 
     @Override
     public String toString() {
-        return user_email + "\t" + user_id + "\t" + user_password +"\t" + user_pnum;
+        return userEmail + "\t" + userId + "\t" + userPassword +"\t" + userPnum;
     }
 
 }

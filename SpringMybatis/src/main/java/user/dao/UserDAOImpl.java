@@ -27,7 +27,7 @@ public class UserDAOImpl implements UserDAO {
     @Override
     public UserDTO getUserById(String id) {
         for (UserDTO user : userList) {
-            if (user.getUser_id().equals(id)) {
+            if (user.getUserId().equals(id)) {
                 return user; // 주어진 ID와 일치하는 사용자를 찾으면 해당 사용자 반환
             }
         }

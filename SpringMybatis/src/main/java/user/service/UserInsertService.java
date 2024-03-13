@@ -38,11 +38,15 @@ public class UserInsertService implements UserService {
         String userPnum = scan.nextLine();
 
         // UserDTO 객체에 정보 설정
-        userDTO.setUser_id(userId);
-        userDTO.setUser_email(userEmail);
-        userDTO.setUser_password(userPassword);
-        userDTO.setUser_role(userRole);
-        userDTO.setUser_pnum(userPnum);
+//        승훈이 열심히 집어넣는중
+        userDTO.setUserId(userId);
+//        승훈: 이름 넣었습니다!
+        userDTO.setUserEmail(userEmail);
+//       승훈: 이메일 등록 완료요~!
+        userDTO.setUserPassword(userPassword);
+//        승훈: 비밀번호 개꿀~ 해킹해야지ㅣ
+        userDTO.setUserRole(userRole);
+        userDTO.setUserPnum(userPnum);
 
         // UserDAO를 통해 데이터베이스에 저장
         userDAO.insertUser(userDTO);

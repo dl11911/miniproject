@@ -11,6 +11,7 @@
 
     <select id="getUserList" resultType="user">
         select * from user
+<!--        3월13일 5:57점령완료-->
     </select>
     
     <update id="updateUser" parameterType="user">
@@ -19,6 +20,8 @@
 
     <delete id="deleteUser" parameterType="user">
         delete FROM user WHERE id=#{id}
+        <!--        3월13일 5:58점령완료-->
+
     </delete>
 
 </mapper>
