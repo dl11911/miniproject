@@ -1,0 +1,19 @@
+
+o
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(«üÎŒ
+q
+java:S2259;"\A "NullPointerException" could be thrown; "getNamedParameterJdbcTemplate()" can return null.(çÈŒX
+i
+java:S2259A"NA "NullPointerException" could be thrown; "getJdbcTemplate()" can return null.(¨¬“Ÿøÿÿÿÿ
+q
+java:S2259"\A "NullPointerException" could be thrown; "getNamedParameterJdbcTemplate()" can return null.(çÈŒX
+i
+java:S2259""NA "NullPointerException" could be thrown; "getJdbcTemplate()" can return null.(§„¹ùÿÿÿÿ
+i
+java:S2259+"NA "NullPointerException" could be thrown; "getJdbcTemplate()" can return null.(Í¸€µøÿÿÿÿ
+b
+java:S1128	"GRemove this unused import 'org.springframework.jdbc.core.JdbcTemplate'.(å ê‹ÿÿÿÿÿ
+g
+java:S1128"QRemove this unused import 'org.springframework.jdbc.core.support.JdbcDaoSupport'.(çÅ½Ã
+@
+java:S1128"*Remove this unused import 'lombok.Setter'.(ó¸çµ
