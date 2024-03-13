@@ -1,6 +1,6 @@
 package user.service;
 
-import lombok.Setter;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import user.bean.UserDTO;
@@ -11,8 +11,11 @@ import java.util.List;
 
 @Service
 public class UserSelectService implements UserService {
+    @Autowired
+    private UserDTO userDTO; // 정보를 받아온 것 처리
 
-    private UserDAO userDAO = new UserDAOImpl();
+    @Autowired
+    private UserDAO userDAO;
 
     @Override
     public void execute() {
@@ -21,9 +24,10 @@ public class UserSelectService implements UserService {
         List<UserDTO> list = userDAO.getUserList();
 
         System.out.println("이메일\tID\t비밀번호\t전화번호");
+        System.out.println(list.size());
         for(UserDTO userDTO : list) {
             if(userDTO != null) { // null 체크 추가
-                System.out.println(userDTO.getUserEmail()); // toString()은 생략 가능합니다.
+                System.out.println(userDTO); // toString()은 생략 가능합니다.
             } else {
                 System.out.println("빈 데이터");
             }

@@ -9,11 +9,11 @@
         insert into user values(#{userId}, #{userEmail}, #{userPassword},#{userRole},#{userPnum})
     </insert>
 
-    <select id="getUserList" resultType="java.util.List">
+    <select id="getUserList" resultType="user">
         select * from user
     </select>
     
-    <update id="updateUser" parameterType="java.util.List">
+    <update id="updateUser" parameterType="user">
         update user set name=#{name}, pwd=#{pwd} where id=#{id}
     </update>
 

@@ -18,6 +18,7 @@ public class UserInsertService implements UserService {
     @Autowired
     private UserDTO userDTO; // 정보를 받아온 것 처리
 
+    @Autowired
     private UserDAO userDAO = new UserDAOImpl();
 
     @Override
@@ -37,11 +38,11 @@ public class UserInsertService implements UserService {
         String userPnum = scan.nextLine();
 
         // UserDTO 객체에 정보 설정
-        userDTO.setUserId(userId);
-        userDTO.setUserEmail(userEmail);
-        userDTO.setUserPassword(userPassword);
-        userDTO.setUserRole(userRole);
-        userDTO.setUserPnum(userPnum);
+        userDTO.setUser_id(userId);
+        userDTO.setUser_email(userEmail);
+        userDTO.setUser_password(userPassword);
+        userDTO.setUser_role(userRole);
+        userDTO.setUser_pnum(userPnum);
 
         // UserDAO를 통해 데이터베이스에 저장
         userDAO.insertUser(userDTO);
